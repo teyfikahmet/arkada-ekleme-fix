@@ -1,7 +1,7 @@
 // ekle biryerlere
-bool MessengerManager::isFriend(char char_name[CHARACTER_NAME_MAX_LEN + 1], char target_name[CHARACTER_NAME_MAX_LEN + 1])
+bool MessengerManager::isFriend(MessengerManager::keyA account, MessengerManager::keyA companion)
 {
-	if (m_Relation[char_name].find(target_name) != m_Relation[char_name].end())
+	if (m_Relation[account].find(companion) != m_Relation[account].end())
 		return true;
 
 	return false;
