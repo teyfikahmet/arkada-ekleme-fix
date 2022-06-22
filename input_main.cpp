@@ -26,7 +26,7 @@ case MESSENGER_SUBHEADER_CG_ADD_BY_NAME:
 						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("»ó´ë¹æÀÌ ¸Ş½ÅÁ® Ãß°¡ °ÅºÎ »óÅÂÀÔ´Ï´Ù."));
 					}
           // burası
-					if (MessengerManager::instance().isFriend(ch->GetName(), tch->GetName())
+					else if (MessengerManager::instance().isFriend(ch->GetName(), tch->GetName()))
 					{
 						// zaten ekli
 					}
